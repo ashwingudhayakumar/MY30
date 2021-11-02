@@ -1,4 +1,4 @@
-Question:
+/*Question:
 
 
 Flipping Bits
@@ -22,7 +22,7 @@ N/A
 
 
 Answer:
-
+*/
 
 
 long flippingBits(long n){

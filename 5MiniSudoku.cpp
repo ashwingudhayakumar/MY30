@@ -1,4 +1,4 @@
-QUESTION:
+/*QUESTION:
 
 
 A Sudoku is a 9x9 grid that is completed when every 3x3 square, row and column consist of the numbers 1-9.
@@ -20,7 +20,7 @@ N/A
 
 
 
-ANSWER:
+ANSWER:*/
 
 
 bool isMiniSudoku(std::vector<std::vector<int>> square) {

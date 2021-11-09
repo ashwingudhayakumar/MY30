@@ -1,4 +1,4 @@
-QUESTION:
+/*QUESTION:
 
 
 
@@ -23,7 +23,7 @@ Characters won't be used more than once per string.
 
 ANSWER:
 
-
+*/
 
 int minRemovals(std::string str1, std::string str2) {
 	int arr[26]={0};

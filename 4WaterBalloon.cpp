@@ -1,4 +1,4 @@
-QUESTION:
+/*QUESTION:
 Water Balloon
 Once a water balloon pops, is soaks the area around it. The ground gets drier the further away you travel from the balloon.
 
@@ -20,7 +20,7 @@ If the input array consists only of zeroes, return the same array.
 
 
 
-ANSWER:
+ANSWER:*/
 std::vector<int> pop(std::vector<int> state) {
 	std::vector<int>effect;
 	int note;

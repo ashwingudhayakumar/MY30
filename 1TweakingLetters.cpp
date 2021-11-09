@@ -1,4 +1,4 @@
-QUESTION:
+/*QUESTION:
 Tweaking Letters
 Create a function that tweaks letters by one forward (+1) or backwards (-1) according to an array.
 
@@ -13,7 +13,7 @@ Notes
 Don't worry about capital letters.
 
 
-ANSWER:
+ANSWER:*/
 std::string tweakLetters(std::string s, std::vector<int> arr) {
 	for(int i=0;i<arr.size();i++){
 		if(s[i]=='a'&&arr[i]==-1)s[i]='z';

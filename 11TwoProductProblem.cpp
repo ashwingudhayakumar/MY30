@@ -1,4 +1,4 @@
-QUESTION:
+/*QUESTION:
 
 
 
@@ -24,7 +24,7 @@ The array can have multiple solutions, so return the first full match that you h
 
 
 
-ANSWER:
+ANSWER:*/
 
 
 #include<algorithm>

@@ -1,4 +1,4 @@
-QUESTION:
+/*QUESTION:
 
 
 
@@ -25,7 +25,7 @@ N/A
 
 ANSWER:
 
-
+*/
 
 int stockPicker(std::vector<int> arr) {
 	int max=-1;

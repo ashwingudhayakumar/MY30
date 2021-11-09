@@ -1,4 +1,4 @@
-QUESTION:
+/*QUESTION:
 Sum of Largest Integer
 Create a function that takes a number n as an argument and returns the largest integer that is less than or equal to n and has the highest digit sum (see examples below for a better understanding).
 
@@ -16,7 +16,7 @@ largestDigitSum(10) ➞ 9
 Notes
 N/A
 
-ANSWER:
+ANSWER:*/
 int largestDigitSum(int n) {
 	int largestSum=-1;
 	int correspondingNum=-1;

@@ -1,4 +1,4 @@
-QUESTION:
+/*QUESTION:
 
 
 Reverse Coding Challenge #1
@@ -22,7 +22,7 @@ If you get stuck, check the Comments for help.
 
 ANSWER:
 
-
+*/
 
 #include<string>
 std::string mysteryFunc(std::string s) {

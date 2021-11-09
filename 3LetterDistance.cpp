@@ -1,4 +1,4 @@
-QUESTION :
+/*QUESTION :
 Letter Distance
 Given two words, the letter distance is calculated by taking the absolute value of the difference in character codes and summing up the difference.
 
@@ -23,7 +23,7 @@ Excess letters are not counted towards distance.
 Capital letters are included.
 
 
-ANSWER:
+ANSWER:*/
 int letterDistance(std::string str1, std::string str2) {
 	int min=str1.size()<str2.size()?str1.size():str2.size();
 	

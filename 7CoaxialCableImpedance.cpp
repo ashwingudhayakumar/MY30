@@ -1,4 +1,4 @@
-QUESTION:
+/*QUESTION:
 
 
 
@@ -19,7 +19,7 @@ Round your result to one decimal place.
 
 ANSWER:
 
-
+*/
 
 #include<cmath>
 int impedanceCalculator(float Dd, float Dc, float er) {

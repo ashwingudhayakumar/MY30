@@ -1,4 +1,4 @@
-QUESTION :
+/*QUESTION :
 
 
 
@@ -38,7 +38,7 @@ ANSWER:
 
 
 
-
+*/
 using namespace std;
 bool isValidHexCode(std::string str) {
 	if(str.size()==7){

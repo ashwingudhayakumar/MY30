@@ -1,0 +1,585 @@
+1,Tweaking Letters
+Create a function that tweaks letters by one forward (+1) or backwards (-1) according to an array.
+
+Examples
+tweakLetters("apple", {0, 1, -1, 0, -1}) ➞ "aqold"
+// "p" + 1 => "q"; "p" - 1 => "o"; "e" - 1 => "d"
+
+tweakLetters("many", {0, 0, 0, -1}) ➞ "manx"
+
+tweakLetters("rhino", {1, 1, 1, 1, 1}) ➞ "sijop"
+Notes
+Don't worry about capital letters.
+
+
+
+
+2,Sum of Largest Integer
+Create a function that takes a number n as an argument and returns the largest integer that is less than or equal to n and has the highest digit sum (see examples below for a better understanding).
+
+Examples
+largestDigitSum(100) ➞ 99
+// Digit Sum for 99 = 9 + 9 = 18
+// All numbers from 0 to 98 and 100 itself have digit sum lesser than 18.
+
+largestDigitSum(48) ➞ 48
+// Digit sum for 48 = 4 + 8 =12
+// Digit sum for 39 = 3 + 9 =12
+// Return 48 because 48 > 39
+
+largestDigitSum(10) ➞ 9
+Notes
+N/A
+
+
+3,Letter Distance
+Given two words, the letter distance is calculated by taking the absolute value of the difference in character codes and summing up the difference.
+
+If one word is longer than another, add the difference in lengths towards the score.
+
+To illustrate:
+
+letterDistance("house", "fly") = dist("h", "f") + dist("o", "l") + dist("u", "y") + dist(house.length, fly.length)
+
+= |104 - 102| + |111 - 108| + |117 - 121| + |5 - 3|
+= 2 + 3 + 4 + 2
+= 11
+Examples
+letterDistance("sharp", "sharq") ➞ 1
+
+letterDistance("abcde", "Abcde") ➞ 32
+
+letterDistance("abcde", "bcdef") ➞ 5
+Notes
+Always start comparing the two strings from their first letter.
+Excess letters are not counted towards distance.
+Capital letters are included.
+
+
+
+4,Water Balloon
+Once a water balloon pops, is soaks the area around it. The ground gets drier the further away you travel from the balloon.
+
+The effect of a water balloon popping can be modeled using an array. Create a function that takes an array which takes the pre-pop state and returns the state after the balloon is popped. The pre-pop state will contain at most a single balloon, whose size is represented by the only non-zero element.
+
+Examples
+pop([0, 0, 0, 0, 4, 0, 0, 0, 0]) ➞ [0, 1, 2, 3, 4, 3, 2, 1, 0]
+
+pop([0, 0, 0, 3, 0, 0, 0]) ➞ [0, 1, 2, 3, 2, 1, 0]
+
+pop([0, 0, 2, 0, 0]) ➞ [0, 1, 2, 1, 0]
+
+pop([0]) ➞ [0]
+Notes
+Length of input array is always odd.
+The input array will always be the exact length it takes for there to be exactly one border zero.
+If the input array consists only of zeroes, return the same array.
+
+
+
+5,A Sudoku is a 9x9 grid that is completed when every 3x3 square, row and column consist of the numbers 1-9.
+
+For this task, you will be given a completed 3x3 square, in the form of a two-dimensional array. Create a function that checks to make sure this 3x3 square contains each number from 1-9 exactly once. Make sure there are no duplicates, and no numbers outside this range.
+
+Examples
+isMiniSudoku([[1, 3, 2], [9, 7, 8], [4, 5, 6]]) ➞ true
+
+isMiniSudoku([[1, 1, 3], [6, 5, 4], [8, 7, 9]]) ➞ false
+// The 1 is repeated twice 
+
+isMiniSudoku([[0, 1, 2], [6, 4, 5], [9, 8, 7]]) ➞ false
+// The 0 is included (outside range)
+
+isMiniSudoku([[8, 9, 2], [5, 6, 1], [3, 7, 4]]) ➞ true 
+Notes
+N/A
+
+
+
+6,Reverse Coding Challenge #1
+This is a reverse coding challenge. Normally you're given explicit directions with how to create a function. Here, you must generate your own function to satisfy the relationship between the inputs and outputs.
+
+Your task is to create a function that, when fed the inputs below, produce the sample outputs shown.
+
+Examples
+"A4B5C2" ➞ "AAAABBBBBCC"
+
+"C2F1E5" ➞ "CCFEEEEE"
+
+"T4S2V2" ➞ "TTTTSSVV"
+
+"A1B2C3D4" ➞ "ABBCCCDDDD"
+Notes
+If you get stuck, check the Comments for help.
+
+
+
+7,Coaxial Cable Impedance
+Create a function that takes the values Dd (Dielectric Outer Diameter), Dc (Inner Conductor Diameter) and er (Dielectric Constant) and calculates the Coaxial Cable Impedance.
+
+Examples
+impedanceCalculator(20.7, 2, 4) ➞ 70
+
+impedanceCalculator(5.3, 1.2, 2.2) ➞ 60
+
+impedanceCalculator(4.48, 1.33, 2.2) ➞ 50
+Notes
+If you get stuck on a challenge, find help in the Resources tab.
+Round your result to one decimal place.
+
+
+
+
+8,Minimum Removals to Make Two Strings Anagrams
+Create a function that returns the smallest number of letter removals so that two strings are anagrams of each other.
+
+Examples
+minRemovals("abcde", "cab") ➞ 2
+// Remove "d", "e" to make "abc" and "cab".
+
+minRemovals("deafk", "kfeap") ➞ 2
+// Remove "d" and "p" from the first and second word, respectively.
+
+minRemovals("acb", "ghi") ➞ 6
+// Remove all letters from both words to get "" and "".
+Notes
+An anagram is any string that can be formed by shuffling the characters of the original string. For example: baedc is an anagram of abcde.
+An empty string can be considered an anagram of itself.
+Characters won't be used more than once per string.
+
+
+
+
+9,Two Product Problem (Part 2)
+Create a function that takes an array arr and a number n and returns an array of two integers whose product is that of the number n.
+
+Examples
+twoProduct([1, 2, 3, 4, 13, 5], 39) ➞ [3, 13]
+
+twoProduct([11, 2, 7, 3, 5, 0], 55) ➞ [5, 11]
+
+twoProduct([100, 12, 4, 1, 2], 15) ➞ [0, 0]
+//Numbers not found in given array.
+Notes
+No duplicates.
+Sort the number.
+Try doing this with 0(n) time complexity.
+The array can have multiple solutions, so return the first match you find.
+
+
+
+
+10,Stock Picker
+Create a function that takes an array of integers that represent the amount in dollars that a single stock is worth, and return the maximum profit that could have been made by buying stock on day x and selling stock on day y where y>x.
+
+If given the following array:
+
+[44, 30, 24, 32, 35, 30, 40, 38, 15]
+... your program should return 16 because at index 2 the stock was worth $24 and at the index 6 the stock was then worth $40, so if you bought the stock at 24 and sold it on 40, you would have made a profit of $16, which is the maximum profit that could have been made with this list of stock prices.
+
+If there is no profit that could have been made with the stock prices, then your program should return -1 (e.g. [[10, 9, 8, 2]] should return -1).
+
+Examples
+stockPicker([10, 12, 4, 5, 9]) ➞ 5
+
+stockPicker([14, 20, 4, 12, 5, 11]) ➞ 8
+
+stockPicker([80, 60, 10, 8]) ➞ -1
+Notes
+N/A
+
+
+
+
+11,Two Product Problem
+Create a function that takes an array arr and a number n and returns an array of two integers from arr whose product equals n.
+
+Examples
+twoProduct([1, 2, -1, 4, 5], 20) ➞ [4, 5]
+
+twoProduct([1, 2, 3, 4, 5], 10) ➞ [2, 5]
+
+twoProduct([100, 12, 4, 1, 2], 15) ➞ []
+Note:
+Try doing this with 0(N) time complexity.
+No duplicates.
+In the array, there can be multiple solutions so return the solution with the lowest sum of indexes of product pairs (i.e. N = 10, solutions = [[2, 5], [10, 1]], indexes = [[600, 3000], [800, 900]], return [10, 1]).
+The array can have multiple solutions, so return the first full match that you have found.
+
+
+
+
+12,Check Magic Square
+A "magic square" is a square divided into smaller squares each containing a number, such that the numbers in each vertical, horizontal, and diagonal row add up to the same value.
+
+3x3 Magic Square
+
+Write a function that takes a 2D array, checks if it's a magic square and returns either true or false depending on the result.
+
+Examples
+isMagicSquare([
+  [8, 1, 6],
+  [3, 5, 7],
+  [4, 9, 2]
+]) ➞ true
+
+isMagicSquare([
+  [16,  3,  2, 13],
+  [ 5, 10, 11,  8],
+  [ 9,  6,  7, 12],
+  [ 4, 15, 14,  1]
+]) ➞ true
+
+isMagicSquare([
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+]) ➞ false
+Notes
+Check diagonals as well.
+Test input will always be square.
+Check the Resources tab for additional info on magic squares.
+
+
+
+
+13,Valid Hex Code
+Create a function that determines whether a string is a valid hex code.
+
+A hex code must begin with a pound key # and is exactly 6 characters in length. Each character must be a digit from 0-9 or an alphabetic character from A-F. All alphabetic characters may be uppercase or lowercase.
+
+Examples
+isValidHexCode("#CD5C5C") ➞ true
+
+isValidHexCode("#EAECEE") ➞ true
+
+isValidHexCode("#eaecee") ➞ true
+
+isValidHexCode("#CD5C58C") ➞ false
+// Length exceeds 6
+
+isValidHexCode("#CD5C5Z") ➞ false
+// Not all alphabetic characters in A-F
+
+isValidHexCode("#CD5C&C") ➞ false
+// Contains unacceptable character
+
+isValidHexCode("CD5C5C") ➞ false
+// Missing #
+Notes
+N/A
+
+
+
+
+14,Moran Numbers
+A Harshad number is a number which is divisible by the sum of its digits. For example, 132 is divisible by 6 (1+3+2).
+
+A subset of the Harshad numbers are the Moran numbers. Moran numbers yield a prime when divided by the sum of their digits. For example, 133 divided by 7 (1+3+3) yields 19, a prime.
+
+Create a function that takes a number and returns "M" if the number is a Moran number, "H" if it is a (non-Moran) Harshad number, or "Neither".
+
+Examples
+moran(132) ➞ "H"
+
+moran(133) ➞ "M"
+
+moran(134) ➞ "Neither"
+Notes
+N/A
+
+
+
+15,Fibonacci !Recursion
+The Fibonacci sequence is a classic use case for recursive functions since the value of the sequence at a given index is dependent on the sum of the last two values. However, the recursion tree created by solving the Fibonacci sequence recursively can grow quite fast. Therefore it can be important to think about the implications of running a function recursively. Depending on the size of n needed and the capabilities of the system in question you might want to take a different approach.
+
+Write a non-recursive function that takes an integer n and returns the Fibonacci sequence's value at index n.
+
+Examples
+fib(6) ➞ 8
+// 0 + 1 = 1, 1 + 1 = 2, 1 + 2 = 3, 2 + 3 = 5, 3 + 5 = 8
+
+fib(1) ➞ 1
+
+fib(2) ➞ 1
+Notes
+Inputs will be whole numbers >= 0
+
+
+
+
+16,Flipping Bits
+You will be given a list of 32-bit unsigned integers. Flip all the bits 1 -> 0 and 0 -> 1 and return the result as an unsigned integer.
+Worked Example
+n = 4
+4 is 0100 in binary. We are working in 32 bits so:
+00000000000000000000000000000100 = 4
+11111111111111111111111111111011 = 4294967291
+return 4294967291
+Examples
+flippingBits(2147483647) ➞ 2147483648
+flippingBits(1) ➞ 4294967294
+flippingBits(4) ➞ 4294967291
+Notes
+N/A
+
+
+
+
+17,Swap the Numbers
+Imagine you have three numbers: a, b, and c. c is equal to either a or b, but you don't know which one. Your task is to create a function that returns whatever number c isn't, out of a and b. So, if c is equal to a, return b, and if c is equal to b, return a. Here's what makes this challenge difficult: you cannot use any if statements.
+Examples
+swap(1, 0, 0) ➞ 1
+// a = 1, b = 0, c = b
+// return a
+swap(1, 3, 1) ➞ 3
+// a = 1, b = 3, c = a
+// return b
+swap(27, 31, 31) ➞ 27
+// a = 27, b = 31, c = b
+// return a
+Notes
+To prevent cheating, you also can't call any functions.
+c will always be equal to either a or b.
+a will never equal b.
+a, b, and c will always be integers.
+
+
+
+
+18,Programming Polyglot
+Create a function that takes a number that represents a person's programming language score, and returns an alphabetised array of programming languages they are proficient in. Arbitrarily assigned points for each language are listed below:
+Language	Points
+C#	1
+C++	2
+Java	4
+JavaScript	8
+PHP	16
+Python	32
+Ruby	64
+Swift	128
+Examples
+getLanguages(25) ➞ ["C#", "JavaScript", "PHP"]
+getLanguages(100) ➞ ["Java", "Python", "Ruby"]
+getLanguages(53) ➞ ["C#", "Java", "PHP", "Python"]
+Notes
+Easier using bitwise operations.
+
+
+
+
+19,Sort Positives, Keep Negatives
+Write a function that sorts the positive numbers in ascending order, and keeps the negative numbers untouched.
+Examples
+posNegSort([6, 3, -2, 5, -8, 2, -2]) ➞ [2, 3, -2, 5, -8, 6, -2]
+posNegSort([6, 5, 4, -1, 3, 2, -1, 1]) ➞ [1, 2, 3, -1, 4, 5, -1, 6]
+posNegSort([-5, -5, -5, -5, 7, -5]) ➞ [-5, -5, -5, -5, 7, -5]
+posNegSort([]) ➞ []
+Notes
+If given an empty array, you should return an empty array.
+Integers will always be either positive or negative (0 isn't included in the tests).
+
+
+
+
+20,
+Create a function that creates a box based on dimension n.
+Examples
+makeBox(5) ➞ [
+  "#####",
+  "#   #",
+  "#   #",
+  "#   #",
+  "#####"
+]
+makeBox(3) ➞ [
+  "###",
+  "# #",
+  "###"
+]
+makeBox(2) ➞ [
+  "##",
+  "##"
+]
+makeBox(1) ➞ [
+  "#"
+]
+Notes
+N/A
+
+
+
+
+
+21,Initialize
+Create a function that takes in an array of full names and returns the initials.
+Examples
+initialize(["Stephen Hawking"]) ➞ ["S. H."]
+initialize(["Harry Potter", "Ron Weasley"]) ➞ ["H. P.", "R. W."]
+initialize(["Sherlock Holmes", "John Watson", "Irene Adler"]) ➞ ["S. H.", "J. W.", "I. A."]
+Notes
+Each initial is followed by a dot.
+Names will always be made of two words, separated by a space.
+
+
+
+
+22,How Many "Prime Numbers" Are There?
+Create a function that finds how many prime numbers there are, up to the given integer.
+Examples
+primeNumbers(10) ➞ 4
+// 2, 3, 5 and 7
+primeNumbers(20) ➞ 8
+// 2, 3, 5, 7, 11, 13, 17 and 19
+primeNumbers(30) ➞ 10
+// 2, 3, 5, 7, 11, 13, 17, 19, 23 and 29
+Notes
+N/A
+
+
+
+
+23,Money Bill Count
+Create a function billCount that takes two arguments. The first argument is the amount of money the user has and the second is the array of money bills available. Return the minimum count of money bills required to equal the user money amount.
+billCount(1001, [1, 10, 20])
+# User Money = €1000 and Bills Available = [€1, €10, €20]
+billCount(1001, [1, 10, 20]) -> 51 because 20*50+ 1*1 = 1001
+# We require 50  20€ bill and 1 1€ bill to equal €1001.
+# Therefore, Minimum Count Money Bills is 50 + 1 = 51.
+Examples
+billCount(100, [1, 10, 20]) ➞ 5
+# Because 20 * 5 = 100
+billCount(1050, [1, 10, 20, 100]) ➞ 13
+# Because 100 * 10 + 20 * 2 + 10 * 1 = 1050
+billCount(3, [1, 10]) ➞ 3
+# Because 3 * 1 = 3
+billCount(55, [1, 5, 10, 50]) ➞ 2
+# Because 50 * 1 + 5 * 1 = 55
+Notes
+Money amount and bills are all valid.
+
+
+
+
+24,Sum of Missing Numbers
+Create a function that returns the sum of missing numbers.
+Examples
+sumMissingNumbers([1, 3, 5, 7, 10]) ➞ 29
+// 2 + 4 + 6 + 8 + 9
+sumMissingNumbers([10, 7, 5, 3, 1]) ➞ 29
+sumMissingNumbers([10, 20, 30, 40, 50, 60]) ➞ 1575
+Notes
+The minimum and maximum value of the given array are the inclusive bounds of the numeric range to consider when searching for missing numbers.
+
+
+
+
+25,Next Prime
+Given an integer, create a function that returns the next prime. If the number is prime, return the number itself.
+Examples
+nextPrime(12) ➞ 13
+nextPrime(24) ➞ 29
+nextPrime(11) ➞ 11
+// 11 is a prime, so we return the number itself.
+Notes
+Note: 1 is not a prime.
+
+
+
+26,Cup Swapping
+There are three cups on a table, at positions A, B, and C. At the start, there is a ball hidden under the cup at position B.
+Image of cups where ball is under middle cup
+However, I perform several swaps on the cups, which is notated as two letters. For example, if I swap the cups at positions A and B, I could notate this as AB or BA.
+Create a function that returns the letter position that the ball is at, once I finish swapping the cups. The swaps will be given to you as an array.
+Worked Example
+cupSwapping(["AB", "CA", "AB"]) ➞ "C"
+// Ball begins at position B.
+// Cups A and B swap, so the ball is at position A.
+// Cups C and A swap, so the ball is at position C.
+// Cups A and B swap, but the ball is at position C, so it doesn't move.
+Examples
+cupSwapping(["AB", "CA"]) ➞ "C"
+cupSwapping(["AC", "CA", "CA", "AC"]) ➞ "B"
+cupSwapping(["BA", "AC", "CA", "BC"]) ➞ "A"
+Notes
+A swap could be notated in two different ways, since both ways end up with the same outcome.
+All swaps will be notated as capital letters and will be valid.
+You cannot swap a cup with itself.
+
+
+
+27,Split the String into N Cases of Equal Length
+Create a function that accepts str and cases as parameters where the string is split into N distinct cases of equal length as shown:
+Examples
+splitNCases("Strengthened", 6) ➞ ["St", "re", "ng", "th", "en", "ed"]
+splitNCases("Unscrupulous", 2) ➞ ["Unscru", "pulous" ]
+splitNCases("Flavorless", 1) ➞ ["Flavorless" ]
+Notes
+If it's not possible to split the string as described, return ["Error"].
+
+
+
+
+28,Checkerboard Pattern
+Create a function that returns true if the two-dimensional n x n input array has a checker-board pattern.
+Examples
+isCheckerboard([
+  [1, 1],
+  [0, 1]
+]) ➞ false
+isCheckerboard([
+  [0, 1],
+  [1, 0]
+]) ➞ true
+isCheckerboard([
+  [1, 0, 1, 0, 1],
+  [0, 1, 0, 1, 0],
+  [1, 0, 1, 0, 1],
+  [0, 1, 0, 1, 0],
+  [1, 0, 1, 1, 1]
+]) ➞ false
+isCheckerboard([
+  [1, 0, 1, 0, 1],
+  [0, 1, 0, 1, 0],
+  [1, 0, 1, 0, 1],
+  [0, 1, 0, 1, 0],
+  [1, 0, 1, 0, 1]
+]) ➞ true
+Notes
+An element in the array adheres to the checker-board pattern if the elements directly to the left, right, top and below are of a different type, and the elements on the diagonal direction are of the same type.
+The element in the upper-left corner can be either 0 or 1.
+
+
+
+
+29,Find the Odd Integer
+Create a function that takes an array and finds the integer which appears an odd number of times.
+Examples
+findOdd([1, 1, 2, -2, 5, 2, 4, 4, -1, -2, 5]) ➞ -1
+findOdd([20, 1, 1, 2, 2, 3, 3, 5, 5, 4, 20, 4, 5]) ➞ 5
+findOdd([10]) ➞ 10
+Notes
+There will always only be one integer that appears an odd number of times
+
+
+
+
+30,Happy Numbers
+You are given an array of 0s and 1s, like the one below:
+[0, 1, 0, 0, 0, 1, 1, 1, 0, 1]
+// The first element, a 0, and the last element, a 1 are both unhappy.
+// The second element, a 1 is unhappy.
+// The second-to-last element, a 0 is unhappy.
+// All other numbers in this array are happy.
+A 1 is unhappy if the digit to its left and the digit to its right are both 0s. A 0 is unhappy if the digit to its left and the digit to its right are both 1s. If a number has only one neighbor, it is unhappy if its only neighbor is different. Otherwise, a number is happy.
+Write a function that takes in an array of 0s and 1s and outputs the portion of numbers which are happy. The total portion of numbers which are happy can be represented as:
+portion of happy numbers = (happy 0s + happy 1s) / total numbers
+In the example above, 0.6 is the number of happy numbers.
+Examples
+portionHappy([0, 1, 0, 1, 0]) ➞ 0
+portionHappy([0, 1, 1, 0]) ➞ 0.5
+portionHappy([0, 0, 0, 1, 1]) ➞ 1
+portionHappy([1, 0, 0, 1, 1]) ➞ 0.8
+Notes
+Remember: a 0 border number is unhappy if its only neighbor is a 1 and vice versa.
+An array will contain at least two elements.

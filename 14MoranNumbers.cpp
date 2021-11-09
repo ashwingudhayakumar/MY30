@@ -1,4 +1,4 @@
-Question:
+/*Question:
 
 
 
@@ -24,7 +24,7 @@ N/A
 
 Answer:
 
-
+*/
 using namespace std;
 bool isHarshad(int n,int sum){
 	if(n%sum==0)return true;

@@ -1,4 +1,4 @@
-QUESTION:
+/*QUESTION:
 
 
 
@@ -22,7 +22,7 @@ The array can have multiple solutions, so return the first match you find.
 
 
 ANSWER:
-
+*/
 
 
 #include<algorithm>

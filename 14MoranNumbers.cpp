@@ -25,6 +25,8 @@ N/A
 Answer:
 
 */
+#include<iostream>
+#include<string>
 using namespace std;
 bool isHarshad(int n,int sum){
 	if(n%sum==0)return true;
@@ -54,4 +56,10 @@ std::string moran(int n) {
 	else if(isHarshad(n,sum)){return "H";}
 	else return "Neither";
 	
+}
+int main(){
+    int n;
+    cout<<"enter n\n";
+    cin>>n;
+    cout<<moran(n);
 }

@@ -43,6 +43,8 @@ ANSWER:
 */
 
 
+#include<iostream>
+#include<vector>
 using namespace std;
 bool isMagicSquare(std::vector<std::vector<int>> square) {
   vector<int> result;
@@ -60,3 +62,23 @@ bool isMagicSquare(std::vector<std::vector<int>> square) {
 	return true;
 	
 }
+int main(){
+    std::vector<std::vector<int>> square;
+    int row;
+    cout<<"Enter row";
+    cin>>row;
+int val;
+for(int i = 0; i < row; i++){
+    vector<int> temp;
+    for(int j = 0; j < row; j++){
+        cin >> val;
+        temp.push_back(val);
+    }
+    square.push_back(temp);
+    temp.clear();
+}
+    cout<<isMagicSquare(square);
+    
+
+}
+

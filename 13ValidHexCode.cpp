@@ -39,6 +39,8 @@ ANSWER:
 
 
 */
+#include<iostream>
+#include<string>
 using namespace std;
 bool isValidHexCode(std::string str) {
 	if(str.size()==7){
@@ -56,4 +58,9 @@ bool isValidHexCode(std::string str) {
 	else{
 		return false;
 	}
+}
+int main(){
+    string s;
+    cin>>s;
+    cout<<isValidHexCode(s);
 }

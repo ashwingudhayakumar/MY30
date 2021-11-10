@@ -27,6 +27,9 @@ ANSWER:
 
 */
 
+#include<iostream>
+#include<vector>
+using namespace std;
 int stockPicker(std::vector<int> arr) {
 	int max=-1;
 	for(int i=0;i<arr.size()-1;i++){
@@ -35,4 +38,15 @@ int stockPicker(std::vector<int> arr) {
 		}
 	}
 	return max;
+}
+int main(){
+	std::vector<int> arr;
+	int size;
+	cin>>size;
+	for(int i=0;i<size;i++){
+	    int x;
+	    cin>>x;
+	    arr.push_back(x);
+	};
+	cout<<stockPicker(arr);
 }

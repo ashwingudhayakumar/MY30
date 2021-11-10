@@ -26,20 +26,42 @@ The array can have multiple solutions, so return the first full match that you h
 
 ANSWER:*/
 
-
+#include<iostream>
+#include<vector>
 #include<algorithm>
 using namespace std;
-std::vector<int> twoProduct(std::vector<int> arr, int n) {
-	vector<int>result;
+vector<int> twoProduct(std::vector<int> arr, int n) {
+	vector<int>result={};
 	sort(arr.begin(),arr.end());
+    
 	int i=0;int j=arr.size()-1;
 	while(i<j){
 		if(arr[i]*arr[j]==n){
-			result.push_back(arr[i]);result.push_back(arr[j]);return result;
+			result.push_back(arr[i]);
+            result.push_back(arr[j]);
+            return result;
 		}
 		else if(arr[i]*arr[j]>n)j--;
-		else i--;
+		else i++;
 	}
 	return result;
-	
+
+}
+int main(){
+	std::vector<int> arr;
+	int size;
+	cin>>size;
+    cout<<"enter size ";
+	int n;
+	cout<<"enter arr elements ";
+	for(int i=0;i<size;i++){
+	    int x;
+	    cin>>x;
+	    arr.push_back(x);
+	};
+    cout<<"enter n "<<"\n";
+    cin>>n;
+	std::vector<int> result=twoProduct(arr,n);
+    if(result.size()==0)cout<<"[]";
+	for(int i=0;i<result.size();i++){cout<<result[i];}
 }

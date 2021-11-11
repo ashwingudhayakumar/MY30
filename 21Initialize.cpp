@@ -31,6 +31,9 @@ Answer:
 
 
 
+#include<iostream>
+#include<vector>
+#include<string>
 using namespace std;
 vector<string> initialize(vector<string> names) {
 	vector<string> result;
@@ -47,4 +50,19 @@ vector<string> initialize(vector<string> names) {
 		result.push_back(s);
 	}
 	return result;
+}
+int main(){
+    vector<string> names;
+    int size;
+    cin>>size;
+    while(size!=0){
+       char temp[100];
+      cin.getline(temp,sizeof(temp));
+       
+        names.push_back(temp);
+      
+        size--;
+    }
+    names=initialize(names);
+    for(auto &x:names)cout<<x;
 }

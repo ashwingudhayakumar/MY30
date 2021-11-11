@@ -21,6 +21,8 @@ N/A
 Answer:
 
 */
+#include<iostream>
+using namespace std;
 bool isPrime(int n){
 	int count=0;
 	for(int i=2;i<=n/2;i++){
@@ -37,4 +39,9 @@ int primeNumbers(int num) {
 		}
 	}
 	return count;
+}
+int main(){
+    int n;
+    cin>>n;
+     cout<<  primeNumbers(n);
 }

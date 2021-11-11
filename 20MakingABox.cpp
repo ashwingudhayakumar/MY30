@@ -45,6 +45,10 @@ Answer:
 
 
 
+#include<iostream>
+#include<vector>
+#include<string>
+using namespace std;
 std::vector<std::string> makeBox(int n) {
 	std::vector<std::string> result;
 	for(int i=0;i<n;i++){
@@ -60,4 +64,12 @@ std::vector<std::string> makeBox(int n) {
 		result.push_back(s);
 	}
 	return result;
+}
+int main(){
+    int n;
+    cin>>n;
+    std::vector<std::string> result=makeBox(n);
+    for(string x:result){
+           cout<<x<<"\n";
+    }
 }

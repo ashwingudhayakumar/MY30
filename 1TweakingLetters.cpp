@@ -14,6 +14,10 @@ Don't worry about capital letters.
 
 
 ANSWER:*/
+#include<string>
+#include<vector>
+#include<iostream>
+using namespace std;
 std::string tweakLetters(std::string s, std::vector<int> arr) {
 	for(int i=0;i<arr.size();i++){
 		if(s[i]=='a'&&arr[i]==-1)s[i]='z';
@@ -21,4 +25,17 @@ std::string tweakLetters(std::string s, std::vector<int> arr) {
 		else s[i]+=arr[i];
 	}
 	return s;
+}
+int main(){
+    std::vector<int> arr;
+    std::string s;
+    int size;
+    cin>>size;
+    for(int i=0;i<size;i++){
+        int x;
+        cin>>x;
+        arr.push_back(x);
+    }
+    cin>>s;
+    cout<<tweakLetters(s,arr);
 }

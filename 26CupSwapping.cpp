@@ -42,6 +42,9 @@ Answer:
 
 
 
+#include<iostream>
+#include<vector>
+using namespace std;
 char cupSwapping(std::vector<std::string> swaps) {
 	char initial='B';
 	for(int i=0;i<swaps.size();i++){
@@ -57,3 +60,16 @@ char cupSwapping(std::vector<std::string> swaps) {
 	}
 	return initial;
 }
+int main(){
+    std::vector<std::string> swaps;
+    int size;
+    cin>>size;
+    while(size){
+        string s;
+        cin>>s;
+        swaps.push_back(s);
+        size--;
+    }
+    cout<<cupSwapping(swaps);
+}
+

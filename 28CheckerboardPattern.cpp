@@ -40,7 +40,9 @@ Answer:
 */
 
 
-
+#include<vector>
+#include<iostream>
+using namespace std;
 bool isCheckerboard(std::vector<std::vector<int>> arr) {
 	for(int i=0;i<arr.size()-1;i++){
 		for(int j=0,k=1;j<arr[i].size()-1;j++,k++){
@@ -49,4 +51,19 @@ bool isCheckerboard(std::vector<std::vector<int>> arr) {
 		if(arr[i][1]!=arr[i+1][0])return false;
 	}
 	return true;
+}
+int main(){
+    std::vector<std::vector<int>> arr;
+    int size;
+    cin>>size;
+    for(int i=0;i<size;i++){
+        vector <int >temp;
+        for(int j=0;j<size;j++){
+            int x;
+            cin>>x;
+            temp.push_back(x);
+        }
+        arr.push_back(temp);
+    }
+    cout<<isCheckerboard(arr);
 }

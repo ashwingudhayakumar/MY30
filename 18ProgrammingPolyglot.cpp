@@ -33,6 +33,10 @@ Answer:
 */
 
 
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
 std::vector<std::string> getLanguages(int num) {
 	std::vector<std::string>result;
 	int A[8]={1,2,4,8,16,32,64,128};
@@ -49,4 +53,11 @@ std::vector<std::string> getLanguages(int num) {
 	std::reverse(result.begin(),result.end());
 	return result;
 	
+}
+int main(){
+    int n;
+    cin>>n;
+     std::vector<std::string> result= getLanguages(n);
+     for(string x:result){cout<<x;}
+
 }

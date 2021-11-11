@@ -22,7 +22,9 @@ Answer:
 
 */
 
+#include<iostream>
 #include <math.h>
+using namespace std;
 bool isPrime(int n){
 	int count=0;
 	for(int i=2;i<=n;i++){
@@ -37,4 +39,9 @@ int nextPrime(int num) {
 		if(isPrime(num))return num;
 		else num++;
 	}
+}
+int main(){
+    int n;
+    cin>>n;
+    cout<<nextPrime(n);
 }

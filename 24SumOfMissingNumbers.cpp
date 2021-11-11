@@ -29,6 +29,10 @@ Answer:
 
 
 
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
 int sumMissingNumbers(std::vector<int> arr) {
 	std::sort(arr.begin(),arr.end());
 	int sum=0;
@@ -45,4 +49,15 @@ int sumMissingNumbers(std::vector<int> arr) {
 		}
 	}
 	return sum;
+}
+int main(){
+    vector<int> arr;
+    int size;
+    cin>>size;
+    while(size){
+        int x;
+        cin>>x;
+        arr.push_back(x);size--;
+    }
+     cout<<sumMissingNumbers(arr);
 }

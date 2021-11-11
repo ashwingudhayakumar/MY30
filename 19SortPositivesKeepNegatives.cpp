@@ -26,6 +26,10 @@ Answer:
 */
 
 
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
 std::vector<int> posNegSort(std::vector<int> arr) {
 	std::vector<int> sorted;
 	for(int i=0;i<arr.size();i++){
@@ -37,4 +41,20 @@ std::vector<int> posNegSort(std::vector<int> arr) {
 		if(arr[i]>0)arr[i]=sorted[j++];
 	}
 	return arr;
+}
+int main(){
+    std::vector<int> arr;
+    int n;
+    cin>>n;
+    while(n!=0){
+        int temp;
+        cin>>temp;
+        arr.push_back(temp);
+        n--;
+    }
+    arr=posNegSort(arr);
+    for(int x:arr){
+        cout<<x;
+    }
+
 }

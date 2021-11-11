@@ -38,6 +38,9 @@ Money amount and bills are all valid.
 Answer:
 */
 
+#include<iostream>
+#include<vector>
+using namespace std;
 int billCount(int money, std::vector<int> bills){
 	int count=0;
 	for(int i=bills.size()-1;i>=0;i--){
@@ -48,6 +51,20 @@ int billCount(int money, std::vector<int> bills){
 			}
 	}
 	return count;
+}
+int main(){
+    int money;
+    cin>>money;
+    int size;
+    cin>>size;
+    vector<int> bills;
+    while(size){
+      int x;
+      cin>>x;
+      bills.push_back(x);
+      size--;
+    }
+    cout<<billCount(money,bills);
 }
 
 

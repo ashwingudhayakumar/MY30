@@ -21,7 +21,10 @@ Answer:
 */
 
 
-
+#include<iostream>
+#include<vector>
+#include<string>
+using namespace std;
 std::vector<std::string> splitNCases(std::string str, int cases) {
 	std::vector<std::string> result;
 	if(str.size()%cases!=0){
@@ -45,4 +48,14 @@ std::vector<std::string> splitNCases(std::string str, int cases) {
 	}
 	return result;
 	
+}
+int main(){
+    string s;
+    cin>>s;
+    int n;
+    cin>>n;
+    std::vector<std::string> result=splitNCases(s,n);
+    for(string x:result){
+        cout<<x<<" ";
+    }
 }

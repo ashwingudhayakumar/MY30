@@ -25,9 +25,17 @@ Answer:
 */
 
 
-long flippingBits(long n){
+#include<iostream>
+using namespace std;
+unsigned long flippingBits(unsigned long n){
   for(int i=0;i<32;i++){
 		n=n^(1u<<i);
 	}
 	return n;
+}
+int main(){
+    unsigned long n;
+    cin>>n;
+    
+    cout<<flippingBits(n);
 }

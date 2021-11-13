@@ -17,6 +17,8 @@ Notes
 N/A
 
 ANSWER:*/
+#include<iostream>
+using namespace std;
 int largestDigitSum(int n) {
 	int largestSum=-1;
 	int correspondingNum=-1;
@@ -36,4 +38,9 @@ int largestDigitSum(int n) {
 		}
 	}
 	return correspondingNum;
+}
+int main(){
+	int n;
+	cin>>n;
+       cout<<    largestDigitSum(n);
 }

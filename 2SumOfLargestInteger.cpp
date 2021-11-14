@@ -41,6 +41,7 @@ int largestDigitSum(int n) {
 }
 int main(){
 	int n;
+	cout<<"Enter the number to be sum\n";
 	cin>>n;
-       cout<<    largestDigitSum(n);
+    cout<<largestDigitSum(n);
 }

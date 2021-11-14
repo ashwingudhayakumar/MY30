@@ -411,15 +411,30 @@ N/A
 
 
 
-21,Initialize
-Create a function that takes in an array of full names and returns the initials.
+21,Print Grid
+Write a method that accepts two integer parameters rows and cols. The output is a 2d array of numbers displayed in column-major order, meaning the numbers shown increase sequentially down each column and wrap to the top of the next column to the right once the bottom of the current column is reached.
+
 Examples
-initialize(["Stephen Hawking"]) ➞ ["S. H."]
-initialize(["Harry Potter", "Ron Weasley"]) ➞ ["H. P.", "R. W."]
-initialize(["Sherlock Holmes", "John Watson", "Irene Adler"]) ➞ ["S. H.", "J. W.", "I. A."]
-Notes
-Each initial is followed by a dot.
-Names will always be made of two words, separated by a space.
+printGrid(3, 6) ➞ [
+  [1, 4, 7, 10, 13, 16],
+  [2, 5, 8, 11, 14, 17],
+  [3, 6, 9, 12, 15, 18]
+]
+
+printGrid(5, 3) ➞ [
+  [1, 6, 11],
+  [2, 7, 12],
+  [3, 8, 13],
+  [4, 9, 14],
+  [5, 10, 15]
+]
+
+printGrid(4, 1) ➞ [
+  [1],
+  [2],
+  [3],
+  [4]
+]
 
 
 
@@ -552,34 +567,78 @@ The element in the upper-left corner can be either 0 or 1.
 
 
 
-29,Find the Odd Integer
-Create a function that takes an array and finds the integer which appears an odd number of times.
+29,Multiplicity of Numbers
+Write a function that returns an array of elements [number, multiplicity]. The multiplicity of a number refers to the number of times it occurs in the array.
+
+To illustrate:
+
+[5, 5, 1, 1, 5, 5, 3]
+[[5, 4], [1, 2], [3, 1]]
+
+// Since 5 appears 4 times, 1 appears twice, and 3 appears once.
+The final array should only include unique elements, and the elements should be ordered by when they first appeared in the original array.
+
 Examples
-findOdd([1, 1, 2, -2, 5, 2, 4, 4, -1, -2, 5]) ➞ -1
-findOdd([20, 1, 1, 2, 2, 3, 3, 5, 5, 4, 20, 4, 5]) ➞ 5
-findOdd([10]) ➞ 10
+multiplicity([1, 1, 1, 2, 2, 3]) ➞ [[1, 3], [2, 2], [3, 1]]
+
+multiplicity([1, 1, 1, 1, 1]) ➞ [[1, 5]]
+
+multiplicity([1, 5, 4, 3, 2]) ➞ [[1, 1], [5, 1], [4, 1], [3, 1], [2, 1]]
 Notes
-There will always only be one integer that appears an odd number of times
+N/A
 
 
 
 
-30,Happy Numbers
-You are given an array of 0s and 1s, like the one below:
-[0, 1, 0, 0, 0, 1, 1, 1, 0, 1]
-// The first element, a 0, and the last element, a 1 are both unhappy.
-// The second element, a 1 is unhappy.
-// The second-to-last element, a 0 is unhappy.
-// All other numbers in this array are happy.
-A 1 is unhappy if the digit to its left and the digit to its right are both 0s. A 0 is unhappy if the digit to its left and the digit to its right are both 1s. If a number has only one neighbor, it is unhappy if its only neighbor is different. Otherwise, a number is happy.
-Write a function that takes in an array of 0s and 1s and outputs the portion of numbers which are happy. The total portion of numbers which are happy can be represented as:
-portion of happy numbers = (happy 0s + happy 1s) / total numbers
-In the example above, 0.6 is the number of happy numbers.
+
+
+
+
+
+30,Construct and Deconstruct
+Given a string, create a function which outputs an array, building and deconstructing the string letter by letter. See the examples below for some helpful guidance.
+
 Examples
-portionHappy([0, 1, 0, 1, 0]) ➞ 0
-portionHappy([0, 1, 1, 0]) ➞ 0.5
-portionHappy([0, 0, 0, 1, 1]) ➞ 1
-portionHappy([1, 0, 0, 1, 1]) ➞ 0.8
+constructDeconstruct("Hello") ➞ [
+  "H",
+  "He",
+  "Hel",
+  "Hell",
+  "Hello",
+  "Hell",
+  "Hel",
+  "He",
+  "H"
+]
+
+constructDeconstruct("edabit") ➞ [
+  "e",
+  "ed",
+  "eda",
+  "edab",
+  "edabi",
+  "edabit",
+  "edabi",
+  "edab",
+  "eda",
+  "ed",
+  "e"
+]
+
+constructDeconstruct("the sun") ➞ [
+  "t",
+  "th",
+  "the",
+  "the ",
+  "the s",
+  "the su",
+  "the sun",
+  "the su",
+  "the s",
+  "the ",
+  "the",
+  "th",
+  "t"
+]
 Notes
-Remember: a 0 border number is unhappy if its only neighbor is a 1 and vice versa.
-An array will contain at least two elements.
+Include spaces (see example #3).

@@ -1,4 +1,5 @@
 
+
 /*QUESTION:
 
 
@@ -65,9 +66,10 @@ bool isMagicSquare(std::vector<std::vector<int>> square) {
 int main(){
     std::vector<std::vector<int>> square;
     int row;
-    cout<<"Enter row";
+    cout<<"Enter row which is same as column\n";
     cin>>row;
 int val;
+cout<<"Enter the elements\n"
 for(int i = 0; i < row; i++){
     vector<int> temp;
     for(int j = 0; j < row; j++){
@@ -81,4 +83,6 @@ for(int i = 0; i < row; i++){
     
 
 }
+
+
 

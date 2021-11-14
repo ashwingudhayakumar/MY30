@@ -22,6 +22,14 @@ ANSWER:
 */
 
 #include<cmath>
+#include<iostream>
+using namespace std;
 int impedanceCalculator(float Dd, float Dc, float er) {
 	return (ceil(138*log10(Dd/Dc)))/sqrt(er);
+}
+int main(){
+    float Dd,
+    Dc,er;
+    cin>>Dd>>Dc>>er;
+    cout<<impedanceCalculator(Dd,Dc,er);
 }

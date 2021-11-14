@@ -44,7 +44,9 @@ int minRemovals(std::string str1, std::string str2) {
 int main(){
     string str1;
     string str2;
+	cout<<"Enter the 1st string\n";
     cin>>str1;
+	cout<<"Enter the 2nd string\n";
     cin>>str2;
     cout<<minRemovals(str1,str2);
 }

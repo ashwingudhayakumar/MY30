@@ -42,6 +42,7 @@ std::string mysteryFunc(std::string s) {
 }
 int main(){
     string s;
+	cout<<"Enter the string\n";
     cin>>s;
     s=mysteryFunc(s);
     cout<<s;

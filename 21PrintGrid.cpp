@@ -53,7 +53,9 @@ std::vector<std::vector<int>> printgrid(int rows, int cols) {
 }
 int main(){
     int rows,cols;
+    cout<<"Enter the row\n";
     cin>>rows;
+    cout<<"Enter the column\n";
     cin>>cols;
     std::vector<std::vector<int>> result=printgrid(rows,cols);
     for(auto &x:result){

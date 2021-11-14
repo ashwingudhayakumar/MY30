@@ -63,7 +63,9 @@ char cupSwapping(std::vector<std::string> swaps) {
 int main(){
     std::vector<std::string> swaps;
     int size;
+	cout<<"Enter the size\n";
     cin>>size;
+	cout<<"Enter the Elements\n";
     while(size){
         string s;
         cin>>s;

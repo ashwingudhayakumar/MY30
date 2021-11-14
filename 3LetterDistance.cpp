@@ -43,7 +43,9 @@ int letterDistance(std::string str1, std::string str2) {
 int main(){
     string str1;
     string str2;
+	cout<<"Enter the first word\n";
     cin>>str1;
+	cout<<"Enter the second word\n";
     cin>>str2;
     cout<<letterDistance(str1,str2);
 }

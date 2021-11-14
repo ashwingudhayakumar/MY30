@@ -1,1 +1,1 @@
-# MY30
+# 30 hard questions in edabit 

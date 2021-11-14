@@ -30,6 +30,7 @@ int impedanceCalculator(float Dd, float Dc, float er) {
 int main(){
     float Dd,
     Dc,er;
+    cout<<"Enter Dd (Dielectric Outer Diameter), Dc (Inner Conductor Diameter) and er (Dielectric Constant)  ";
     cin>>Dd>>Dc>>er;
     cout<<impedanceCalculator(Dd,Dc,er);
 }

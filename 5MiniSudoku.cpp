@@ -44,9 +44,11 @@ int main(){
     int size=3;
 
     std::vector<std::vector<int>> square;
+    cout<<"Enter the elements of size 9\n";
     while(size){
         int t=3;
         std::vector<int> temp_vector;
+        
         while(t){
         int x;
         cin>>x;

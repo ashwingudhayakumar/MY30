@@ -43,5 +43,6 @@ int nextPrime(int num) {
 int main(){
     int n;
     cin>>n;
+	cout<<"Enter the element\n";
     cout<<nextPrime(n);
 }

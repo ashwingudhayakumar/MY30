@@ -35,6 +35,7 @@ unsigned long flippingBits(unsigned long n){
 }
 int main(){
     unsigned long n;
+    cout<<"Enter the number\n";
     cin>>n;
     
     cout<<flippingBits(n);

@@ -77,6 +77,7 @@ std::vector<std::string> constructDeconstruct(std::string str) {
 }
 int main(){
     string s;
+    cout<<"Enter the string with space or without\n";
     getline(cin,s);
    std::vector<std::string> result=constructDeconstruct(s);
    for(auto &x:result){

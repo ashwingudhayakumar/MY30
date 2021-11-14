@@ -61,6 +61,7 @@ bool isValidHexCode(std::string str) {
 }
 int main(){
     string s;
+	 cout<<"enter string\n ";
     cin>>s;
     cout<<isValidHexCode(s);
 }

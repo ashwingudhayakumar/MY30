@@ -67,6 +67,7 @@ std::vector<std::string> makeBox(int n) {
 }
 int main(){
     int n;
+    cout<<"Enter the dimension n\n";
     cin>>n;
     std::vector<std::string> result=makeBox(n);
     for(string x:result){

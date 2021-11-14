@@ -24,7 +24,9 @@ ANSWER:
 
 */
 
+#include<iostream>
 #include<string>
+using namespace std;
 std::string mysteryFunc(std::string s) {
 	std::string str="";
 	for(int i=0;i<s.size();i++){
@@ -37,4 +39,10 @@ std::string mysteryFunc(std::string s) {
 		}
 	}
 	return str;
+}
+int main(){
+    string s;
+    cin>>s;
+    s=mysteryFunc(s);
+    cout<<s;
 }

@@ -23,6 +23,9 @@ N/A
 ANSWER:*/
 
 
+#include<iostream>
+#include<vector>
+using namespace std;
 bool isMiniSudoku(std::vector<std::vector<int>> square) {
 	int count=0;
 	std::vector<int>arr={1,2,3,4,5,6,7,8,9};
@@ -36,4 +39,22 @@ bool isMiniSudoku(std::vector<std::vector<int>> square) {
 	}
 	return true;
 	
+}
+int main(){
+    int size=3;
+
+    std::vector<std::vector<int>> square;
+    while(size){
+        int t=3;
+        std::vector<int> temp_vector;
+        while(t){
+        int x;
+        cin>>x;
+        temp_vector.push_back(x);
+        t--;
+        }
+        square.push_back(temp_vector);
+        size--;
+    }
+    cout<<isMiniSudoku(square);
 }

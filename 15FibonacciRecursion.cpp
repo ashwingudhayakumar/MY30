@@ -33,6 +33,7 @@ int fib(int n) {
 }
 int main(){
     int n;
+     cout<<"enter num\n";
     cin>>n;
     cout<<fib(n);
 }

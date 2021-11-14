@@ -45,7 +45,9 @@ std::vector<int> posNegSort(std::vector<int> arr) {
 int main(){
     std::vector<int> arr;
     int n;
+    cout<<"Enter the size of the array\n";
     cin>>n;
+    cout<<"Enter the elements in an array\n";
     while(n!=0){
         int temp;
         cin>>temp;
@@ -54,7 +56,7 @@ int main(){
     }
     arr=posNegSort(arr);
     for(int x:arr){
-        cout<<x;
+        cout<<x<<" ";
     }
 
 }

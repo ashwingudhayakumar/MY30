@@ -54,10 +54,13 @@ int billCount(int money, std::vector<int> bills){
 }
 int main(){
     int money;
+    cout<<"Enter the money\n";
     cin>>money;
     int size;
+    cout<<"Enter the size for the array\n";
     cin>>size;
     vector<int> bills;
+    cout<<"Enter the elements\n";
     while(size){
       int x;
       cin>>x;

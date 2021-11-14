@@ -1,27 +1,17 @@
 /*
-Question:
-
-
-How Many "Prime Numbers" Are There?
+22,How Many "Prime Numbers" Are There?
 Create a function that finds how many prime numbers there are, up to the given integer.
-
 Examples
 primeNumbers(10) ➞ 4
 // 2, 3, 5 and 7
-
 primeNumbers(20) ➞ 8
 // 2, 3, 5, 7, 11, 13, 17 and 19
-
 primeNumbers(30) ➞ 10
 // 2, 3, 5, 7, 11, 13, 17, 19, 23 and 29
 Notes
 N/A
 
-
-Answer:
-
-*/
-#include<iostream>
+*/#include<iostream>
 using namespace std;
 bool isPrime(int n){
 	int count=0;
@@ -42,6 +32,7 @@ int primeNumbers(int num) {
 }
 int main(){
     int n;
+    cout<<"Enter the number\n";
     cin>>n;
      cout<<  primeNumbers(n);
 }

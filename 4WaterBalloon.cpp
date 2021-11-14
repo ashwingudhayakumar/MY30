@@ -21,6 +21,9 @@ If the input array consists only of zeroes, return the same array.
 
 
 ANSWER:*/
+#include<iostream>
+#include<vector>
+using namespace std;
 std::vector<int> pop(std::vector<int> state) {
 	std::vector<int>effect;
 	int note;
@@ -32,4 +35,19 @@ std::vector<int> pop(std::vector<int> state) {
 	for(int i=1;i<=note;i++)effect.push_back(i);
 	for(int i=note+1;i<state.size();i++)effect.push_back(--note);
 	return effect;
+}
+int main(){
+    int size;
+    cin>>size;
+    std::vector<int> state;
+    while(size){
+        int x;
+        cin>>x;
+        state.push_back(x);
+        size--;
+    }
+    state=pop(state);
+    for(int x:state){
+        cout <<x<<" ";
+    }
 }

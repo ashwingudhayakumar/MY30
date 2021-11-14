@@ -51,7 +51,9 @@ std::vector<std::string> splitNCases(std::string str, int cases) {
 }
 int main(){
     string s;
+	cout<<"Enter the string\n";
     cin>>s;
+	cout<<"Enter the number for equal spacing\n";
     int n;
     cin>>n;
     std::vector<std::string> result=splitNCases(s,n);

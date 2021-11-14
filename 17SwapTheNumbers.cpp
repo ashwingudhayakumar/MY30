@@ -38,6 +38,7 @@ int swap(int a, int b, int c){
 }
 int main(){
     int a,b,c;
+    cout<<"Enter a b c\n";
     cin>>a>>b>>c;
     cout<<swap(a,b,c);
 

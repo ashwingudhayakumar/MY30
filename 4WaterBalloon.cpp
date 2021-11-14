@@ -38,8 +38,10 @@ std::vector<int> pop(std::vector<int> state) {
 }
 int main(){
     int size;
+    cout<<"Enter the size for water ballon pops\n";
     cin>>size;
     std::vector<int> state;
+    cout<<"Enter the element for vector\n";
     while(size){
         int x;
         cin>>x;

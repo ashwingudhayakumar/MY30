@@ -59,7 +59,7 @@ std::string moran(int n) {
 }
 int main(){
     int n;
-    cout<<"enter n\n";
+    cout<<"enter num\n";
     cin>>n;
     cout<<moran(n);
 }

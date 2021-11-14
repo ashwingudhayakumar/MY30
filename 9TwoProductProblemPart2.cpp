@@ -45,15 +45,18 @@ std::vector<int> twoProduct(std::vector<int> arr, int n) {
 }
 int main(){
     int size;
+    cout<<"Enter the size for the array arr\n";
     cin>>size;
     std::vector<int> arr;
      std::vector<int> result;
+     cout<<"Enter the elements for the array\n";
     while(size){
         int x;
         cin>>x;
         arr.push_back(x);
        size--;
     }
+    cout<<"Enter the number n\n";
     int n;
     cin>>n;
     result=twoProduct(arr,n);

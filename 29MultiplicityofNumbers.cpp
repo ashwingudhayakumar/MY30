@@ -62,7 +62,9 @@ int main(){
     
     std::vector<int> arr;
     int size;
+	cout<<"Enter the size\n";
     cin>>size;
+	cout<<"Enter the elements\n";
     while(size){
         int x;
         cin>>x;

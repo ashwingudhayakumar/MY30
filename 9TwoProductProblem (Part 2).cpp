@@ -25,6 +25,8 @@ ANSWER:
 */
 
 
+#include<iostream>
+#include<vector>
 #include<algorithm>
 using namespace std;
 std::vector<int> twoProduct(std::vector<int> arr, int n) {
@@ -36,8 +38,24 @@ std::vector<int> twoProduct(std::vector<int> arr, int n) {
 			result.push_back(arr[i]);result.push_back(arr[j]);return result;
 		}
 		else if(arr[i]*arr[j]>n)j--;
-		else i--;
+		else i++;
 	}
 	result.push_back(0);result.push_back(0);return result;
 	
+}
+int main(){
+    int size;
+    cin>>size;
+    std::vector<int> arr;
+     std::vector<int> result;
+    while(size){
+        int x;
+        cin>>x;
+        arr.push_back(x);
+       size--;
+    }
+    int n;
+    cin>>n;
+    result=twoProduct(arr,n);
+    for(auto &x:result){cout<<x<<" ";}
 }

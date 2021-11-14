@@ -55,7 +55,9 @@ bool isCheckerboard(std::vector<std::vector<int>> arr) {
 int main(){
     std::vector<std::vector<int>> arr;
     int size;
+    cout<<"Enter the row that is same as column also\n";
     cin>>size;
+    cout<<"Enter the elements\n";
     for(int i=0;i<size;i++){
         vector <int >temp;
         for(int j=0;j<size;j++){

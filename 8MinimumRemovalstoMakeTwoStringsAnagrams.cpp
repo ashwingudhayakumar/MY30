@@ -25,6 +25,9 @@ ANSWER:
 
 */
 
+#include<iostream>
+#include<string>
+using namespace std;
 int minRemovals(std::string str1, std::string str2) {
 	int arr[26]={0};
 	for(int i=0;i<str1.size();i++){
@@ -37,4 +40,11 @@ int minRemovals(std::string str1, std::string str2) {
 		if(arr[i]!=0)count++;
 	}
 	return count;
+}
+int main(){
+    string str1;
+    string str2;
+    cin>>str1;
+    cin>>str2;
+    cout<<minRemovals(str1,str2);
 }

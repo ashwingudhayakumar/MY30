@@ -24,6 +24,9 @@ Capital letters are included.
 
 
 ANSWER:*/
+#include<iostream>
+#include<string>
+using namespace std;
 int letterDistance(std::string str1, std::string str2) {
 	int min=str1.size()<str2.size()?str1.size():str2.size();
 	
@@ -36,4 +39,11 @@ int letterDistance(std::string str1, std::string str2) {
 	if(str1.size()>=str2.size())sum+=str1.size()-str2.size();
 	else sum+=str2.size()-str1.size();
 	return sum;
+}
+int main(){
+    string str1;
+    string str2;
+    cin>>str1;
+    cin>>str2;
+    cout<<letterDistance(str1,str2);
 }

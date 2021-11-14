@@ -29,13 +29,17 @@ std::string tweakLetters(std::string s, std::vector<int> arr) {
 int main(){
     std::vector<int> arr;
     std::string s;
+    cout<<"Enter string\n";
+    cin>>s;
     int size;
+    cout<<"Enter size for the vector\n";
     cin>>size;
+    cout<<"Enter elements for the size you mentioned\n";
     for(int i=0;i<size;i++){
         int x;
         cin>>x;
         arr.push_back(x);
     }
-    cin>>s;
+    
     cout<<tweakLetters(s,arr);
 }
